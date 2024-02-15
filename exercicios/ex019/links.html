@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*  SELETORES PERSONALIZADOS
+        # = id
+        . = classe
+        : = pseudo-classe
+        :: = pseudo-element
+        > = filho (children)
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(3, 53, 53, 0.42);
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        a {
+            color: lightblue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* O ":visited" é uma pseudo-classe que índica que visitamos o link mudando a cor do mesmo */
+        a:visited {
+            color: lightcyan;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        /* O ":active" também é uma pseudo-classe e muda a cor do link quando eu clico no mesmo */
+        a:active {
+            color: lightskyblue;
+        }
+
+        /* Pseudo Elementos: eles interferem diretamente no conteúdo do elemento e também funcionam com id e classes */
+
+        /* No exemplo abaixo usei o "::after" para fazer algo acontecer DEPOIS do link, adicionei a propriedade "content" e dentro da mesma ['link'] */
+        /* Que foi a palavra que eu queria que aparacesse, deixando claro ao visitante que aquilo se trata de um link */
+        /*a::after {
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: 400;
+            color: rgba(0, 255, 255, 0.498);
+        }*/
+
+        a::before {
+            content: '⇢ ';
+        }
+
+        a::after {
+            content: ' ⇠';
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li>
+            <a href="https://github.com/luizfernandofagundesef" target="_blank">Link para GitHub</a>
+        </li>
+        <li>
+            <a href="https://youtube.com" target="_blank">Link para Youtube</a>
+        </li>
+        <li>
+            <a href="https://google.com" target="_blank">Link para Site </a>
+        </li>
+    </ul>
+</body>
+
+</html>

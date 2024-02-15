@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div:hover {
+            color: red;
+        }
+
+        /* Este sinal ">" indica a tag dentro da outra, como uma tag filho  */
+        div>p {
+            display: none;
+        }
+
+        /* Ultilizei o "display: block" para fazer o "Hello World!" aparecer ao pasar o cursor sobre a div */
+        div:hover>p {
+            display: block;
+            color: white;
+            background-color: purple;
+            width: 200px;
+        }
+
+        /* Praticas abaixo */
+
+        h2 {
+            font: italic 700 2em Arial, sans-serif;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .divpraticando:hover {
+            color: black;
+        }
+
+        div>a:hover {
+            color: yellow;
+        }
+
+        a:hover>p {
+            display: block;
+            color: lightskyblue;
+            background-color: cadetblue;
+            width: 130px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplo de hover</h1>
+
+    <p>Passe o mouse sobre o texto abaixo </p>
+
+    <div>Passe o mouse aqui
+        <p>Hello world!</p>
+    </div>
+
+    <p>Vá para
+        <a href="pseudoclasse.html">página pseudoclasse</a>
+        ou 
+        <a href="praticando.html">página praticando</a>
+    </p>
+
+</body>
+
+</html>

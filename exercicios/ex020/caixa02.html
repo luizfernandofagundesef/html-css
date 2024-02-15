@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #2E2933;
+            margin: 0;
+        }
+
+        header {
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+        }
+
+        header>h1 {
+            color: #715988;
+            text-align: center;
+            background-color: #8757b318;
+            box-shadow: 3px 2px 3px 1px rgba(0, 0, 0, 0.114);
+        }
+
+        article>h2 {
+            color: #9728ff96;
+        }
+
+        nav {
+            background-color: #8757b318;
+            padding: 3px;
+
+            /* Usando sombras em caixas: "box-shadow:" os valores para essa propriedade serão: o descocamento horizontal, deslocamento vertical, blur, spread e a cor da sombra */
+            box-shadow: 3px 2px 3px 1px rgba(0, 0, 0, 0.114);
+        }
+
+        nav>a {
+            padding-left: 10px;
+            text-decoration: none;
+            color: #9728ff63;
+            font-weight: bold;
+        }
+
+        nav>a:hover {
+            text-decoration: underline;
+            color: #2e2933b1;
+            padding: 3px;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+
+            /* Usando a propriedade "border-radius:;" para arredondar as bordas de uma box, podemos usar todos os valores, short-hand ou 2 valores */
+            /* Temos as seguintes configurações para o border-radius: "border-top-left-radius: 5px;" -> cima esquerda
+            "border-top-right-radius: 5px;" -> cima direita
+            "border-bottom-right-radius: 5px;" -> baixo direita
+            "border-bottom-left-radius: 5px;" -> baixo esquerda 
+            */
+            border-radius: 20px 0px;
+            box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.429);
+        }
+
+        article {
+            background-color: #564d5e53;
+            padding: 5px;
+        }
+
+        article>aside {
+            background-color: rgba(169, 169, 169, 0.662);
+        }
+
+        footer {
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer>p {
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<!-- Tags com valor semântico, são como "divs" porém possuêm semântica -->
+
+<body>
+    <!-- "header" para cabeçalho principal de um site ou até mesmo para o cabeçalho de uma seção ou artigo, também pode conter menus de navegação -->
+    <header>
+
+        <h1>Meu site</h1>
+
+        <!-- "nav" para navegação de links pela estrutura de páginas que vão compor o website -->
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+
+    <!-- "main" para conteúdo principal do site, normalmente contem seções, artigos e conteúdos periféricos -->
+    <main>
+
+        <!-- "section" para seções, podendo ter o conteúdo diretamente em seu corpo ou dividi-los em artigos, podendo possuir cabeçalho -->
+        <section id="assuntos">
+            <p>Curiosidades curiosas</p>
+        </section>
+
+        <section id="noticias">
+
+            <!-- "article" para artigos, podemos usar para delimitar um post de um blog, fórum, notícia, artigo, etc -->
+            <article>
+                <h2>Notícia exemplo </h2>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis tempore, aliquid nisi dolores
+                    est nobis accusantium! Impedit distinctio nesciunt maxime labore harum nisi accusantium iure, ipsam,
+                    eveniet quod voluptatem recusandae!</p>
+
+                <!-- "aside" delimita um conteúdo periférico e complementar ao conteúdo principal de um artigo ou seção -->
+                <aside>
+                    <p>Artigo escrito por exemplo</p>
+                </aside>
+            </article>
+
+            <article>
+
+            </article>
+        </section>
+    </main>
+
+    <!-- "footer" é o rodapé para o site, também podendo ser usado na seção ou artigo, geralmente possue informações sobre a autoria do site ou conteúdo, links adicionais, mapa do site, documentos relacionados -->
+    <footer>
+
+        <p>Desenvolvido por Luiz</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+
+<body>
+    <h1>Usando links externos</h1>
+    <!-- Use a tag <a> para criar um link -->
+    <!-- Use o parâmetro (target="_blank") para abrir o link em uma outra aba -->
+    <!-- Use o parâmetro (rel="external") para dizer que o link é do tipo externo-->
+    <!-- Também existe o parâmetro (hreflang="en") que indica o idioma principal do site que o link nos enviou -->
+    <!-- Outros parâmetros: "_self" este é o que vem por padrão, --Estes estão quase em desuso-- "_top" este desfaz todos os frames e abre o destino no navegador completo, "_parent" similar ao top em uma referência a janela mãe, "nome-do-frame" caso esteja usando frames indica o nome da janela a abrir -->
+    <p>você pode acessar o <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório
+            público do prof Guanabara no GitHub</a></p>
+    <p>Você também pode acessar <a href="https://youtube.com/cursoemvideo">meu canal público no YouTube</a></p>
+
+    <hr>
+
+    <h2>Praticando links externos</h2>
+
+    <p>Neste parágrafo que estou escrevendo para praticar a navegação de links externos, vou criar um link que nos leve
+        a login page do <a href="https://www.facebook.com/login">Facebook</a></p>
+
+    <p>Neste outro parágrafo também criarei um link externo, porém este vai nos levar a outra página, em uma outra aba.
+        Conheça o <a href="https://www.youtube.com" target="_blank" rel="external">YouTube</a></p>
+
+    <hr>
+
+    <h1>Links internos</h1>
+    <!-- Para este link interno funcionar, a "pag002", deve estar na mesma pasta do "index" -->
+    <!-- O parâmetro "next" indica que o link é para a
+    próxima parte do documento atual -->
+    <p>Acesse a segunda página do site <a href="pag002.html" target="_self" rel="next">clicando aqui</a> pag002 </p>
+
+    <p>Acesse a página de notícias <a href="noticias/pag003.html" target="_self">clicando aqui</a> pag003</p>
+
+    <p>acesse a página 4 <a href="noticias/duvidacaminho/pag004.html">clicando aqui</a></p>
+
+    <h1>Links para Download</h1>
+    <!-- Use o parâmetro (download="nome do arquivo.pdf") para torna-lo baixável -->
+    <!-- Para identificar o "type" de algum arquivo media-type, visite o site: "iana.org/assignments/media-types/" -->
+    <ul>
+        <a href="/livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">
+            <li>Baixar livro PDF</li>
+        </a>
+        <a href="livro/meulivro.zip" download="meulivro.zip" type="application.zip">
+            <li>Livro compactado em ZIP</li>
+        </a>
+    </ul>
+</body>
+
+</html>

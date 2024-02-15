@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        body {
+            background-color: grey;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            /* Ocupará o tamanho mínimo de 320px (que é a largura da tela de celulares mais antigos) */
+            min-width: 280px;
+            /* Mesmo em uma tela grande o conteúdo cupará 800px com o max-width: 800px; */
+            max-width: 800px;
+            margin: auto;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum vitae sed consectetur. Numquam obcaecati
+            quisquam distinctio assumenda dolores fugiat, autem nam minima dignissimos eveniet sunt temporibus vero,
+            ratione
+            et nisi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi repellat qui sit officiis maiores
+            corrupti totam, quaerat debitis consectetur quibusdam hic aperiam ipsam numquam accusantium ab vitae
+            pariatur
+            tempore error. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi ea, provident voluptatem
+            atque
+            nihil est harum tempore quae consequatur iste repellendus? Ullam alias tenetur facere maxime ut amet eos
+            nam.
+        </p>
+
+        <picture>
+            <source media="(max-width: 650px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum vitae sed consectetur. Numquam obcaecati
+            quisquam distinctio assumenda dolores fugiat, autem nam minima dignissimos eveniet sunt temporibus vero,
+            ratione
+            et nisi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi repellat qui sit officiis maiores
+            corrupti totam, quaerat debitis consectetur quibusdam hic aperiam ipsam numquam accusantium ab vitae
+            pariatur
+            tempore error. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi ea, provident voluptatem
+            atque
+            nihil est harum tempore quae consequatur iste repellendus? Ullam alias tenetur facere maxime ut amet eos
+            nam.
+        </p>
+    </main>
+</body>
+
+</html>

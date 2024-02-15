@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+
+<body>
+    <h1>Trabalhando com listas</h1>
+    <hr>
+
+    <h2>Listas ordenadas</h2>
+    <!-- Para criar listas ordenadas use a tag <ol></ol> -->
+    <!-- Não esqueça da tag <li> -->
+    <!-- A tag de fechamento </li> se tornou opcional -->
+    <!-- Para mudar o tipo de contagem ultilize o parâmetro (Type="") '"1" para números, "A" para letras, "I" para números romanos' -->
+    <!-- A lista começa por padrão em 1, para mudar apresente o atributo (start="") -->
+    <ol type="1" start="1">
+        <li>Acordar</li>
+        <li>Ligar para Joâo</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltra para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <hr>
+
+    <h2>Listas não-ordenadas</h2>
+    <!-- Para criar listas não-ordenadas use a tag <ul></ul> -->
+    <!-- Não esqueça da tag <li> -->
+    <!-- Para mudar o tipo de contagem ultilize o parâmetro (Type="") '"disc" para um circulo massivo, "circle" para um círculo, "aquare" para um quadrado' -->
+    <ul type="circle">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Alface</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <hr>
+    <h2><mark>Treinando listas ordenadas e não ordenadas</mark></h2>
+
+    <h3>Lista ordenada</h3>
+
+    <ol type="i">
+        <li>Acordar</li>
+        <li>Escovar os dentes e lavar o rosto</li>
+        <li>Dar bom dia aos familiares e Tomar café</li>
+        <li>Checar as redes socias</li>
+        <li>Fazer trabalhos domésticos</li>
+        <li>Ir ao mercado</li>
+        <li>Almoçar</li>
+        <li>Começar os estudos</li>
+    </ol>
+
+    <h3>Lista não-ordenada</h3>
+
+    <ul type="circle">
+        <li>Terminar os estudos</li>
+        <li>Fazer um alongamento</li>
+        <li>Ir fazer caminhada</li>
+        <li>Hórario livre</li>
+        <li>Jantar</li>
+        <li>Hórario livre</li>
+    </ul>
+    <hr>
+
+    <h2>Minhas linguagens favoritas</h2>
+    <!-- Podemos criar listas dentro de listas, isto é chamado de "aninhamento", pois se assemelha a um ninho. -->
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Java</li>
+            <li>Python</li>
+            <li>Fortran</li>
+            <li>Assembly</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+
+        <li>PlayStation 2</li>
+        <ol type="A">
+            <li>Toy Story</li>
+            <li>GTA San Andreas</li>
+        </ol>
+
+        <li>Mobile</li>
+        <ul>
+            <li>Minecraft</li>
+            <ul type="disc">
+                <li>Criativo</li>
+                <li>Sobrevivência</li>
+                <li>Minijogos</li>
+            </ul>
+            <li>Clash of Clans</li>
+            <ul>
+                <li>Guerra de clãs</li>
+                <li>Jogos de Ligas</li>
+            </ul>
+        </ul>
+
+        <li>Xbox 360</li>
+        <ol type="i">
+            <li>Gears of War</li>
+            <li>Counter Strike</li>
+        </ol>
+
+        <li>Board</li>
+        <ul>
+            <li>Xadrez</li>
+        </ul>
+
+        <li>PC</li>
+        <ul type="square">
+            <li>GTA V</li>
+            <li>Fortnite</li>
+        </ul>
+    </ol>
+
+    <h2>Lista de definições</h2>
+    <!-- O Google da preferência a sites com "listas de definições" quando algo que tem  neles for pesquisado, por exemplo a descrição de HTML abaixo -->
+    <!-- <dl> significa "definition list". É como se fosse um dicionário -->
+    <!-- <dt> significa "definition term". É o termo -->
+    <!-- <dd> significa "definition description". É a descrição do termo -->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Línguagem de marcação para criação de conteúdo e um site.</dd>
+        <dt>CSS</dt>
+        <dd>Língugem de marcação para estilização de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Língugem de programação para criação da interatividade de um site.</dd>
+    </dl>
+
+</body>
+
+</html>

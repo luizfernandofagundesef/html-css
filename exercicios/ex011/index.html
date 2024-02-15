@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo com HTML5</title>
+</head>
+
+<body>
+    <!-- "Esquece qualidade top quando se falar de imagens de audios e de vídeos. Imagens top de qualidade top, são arquivos feitos para download e não para navegação  -->
+
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <!-- Os padrões de vídeos mais ultilizados e suportados sao: "MP4" que em vídeo são os arquivos (.MP4 E .MKV), "Webm" são arquivos bem pequenos mas com qualidades sofríveis, "OGG" que em vídeo é o arquivo (OGV) -->
+    <!-- Assim como nos áudios é importante que temos vários arquivos de vários formatos -->
+
+
+    <video poster="imagem/limoes-capa.png" controls width="500px">
+        <source src="video/pexels-video (1080p).mp4" type="video/mp4">
+        <source src="video/pexels-video (1080p).webm" type="video/webm">
+        <p>Seu navgador não conseguiu reproduzir o vídeo, baixe-o
+            <a href="#" download="video/pexels-video (1080p).mp4">clicando aqui</a>
+        </p>
+    </video>
+
+    <p><a href="treinando.html">clique aqui</a> para ir para a página em que pratiquei.</p>
+
+    <h1>inserindo vídeos do YouTube</h1>
+    <!-- Para inserir vídeos externos ultilize plataformas como YouTube ou Vimeo, busque o vídeo desejado e o copie junto com as tags <iframe> -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=YdzpPpDZiyixmEXr"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+    <p>O vídeo dos limões consome nosso próprio serviço de hospedagem enquento o vídeo do YouTube/Vimeo consome serviços
+        externos.
+    </p>
+
+    <!-- A vantagem de usar o Vimeo é a privacidade, onde podemos deixar um vídeo privado, já no YouTube não
+        temos esta opção. -->
+</body>
+
+</html>

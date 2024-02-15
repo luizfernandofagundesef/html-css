@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        /* Criando degradês em CSS através do parâmetro "backgroundcolor: linear-gradient(direção, cor, cor)" */
+        /* A direção pode ser também em deg (graus), exemplo 90deg ou 45deg */
+
+        /* Ao color a direção para baixo fica errado e todo quebrado, por isso adicione esta configuração global dentro de style: *{height: 100%;}  */
+
+        /*
+        
+        * {
+            height: 100%;
+        }
+
+        */
+
+        /* Ao invés de "linear", podemos color "radial", para isso devemos tirar a direção e escrever "circle" no lugar */
+
+        /* Podemos também adicionar uma porcentagem após a cor para dizer quanto espaço a mesma vai ocupar na tel e no degradê */
+
+        body {
+            background-image: linear-gradient(to right, #7F0CFF, #C107E8, #FC02D8, #FE0964, #FE7D05);
+            /* Parâmetro usado para desfazer o corte das cores ao scrow down, um fundo fixo */
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Testando gradiente</h1>
+
+    <p>Para voltar para a página 01 <a href="cor01.html">clique aqui</a></p>
+</body>
+
+</html>

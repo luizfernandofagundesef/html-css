@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        /* Tudo que começa com @ em CSS deve estar logo abaixo do style ou caso esteja usando CSS externo o @ deve estar nas primeiras linhas e FORA de um seletor */
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Monoton&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        /* Importei as fontes do google fontes e as apliquei aqui */
+        body {
+            /* Shorthand font: style, weight, size, family */
+            font: 500 1em Work Sans;
+        }
+
+        h1 {
+            font: 700 3em Caveat, Arial, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        h2 {
+            font: 700 2em Caveat;
+        }
+
+        h3 {
+            font: 400 2em Monoton;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>título de fonte a mão</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non enim, iste nemo pariatur quae aspernatur aperiam,
+        repellendus saepe ipsa amet laudantium perferendis vitae excepturi suscipit sed modi tempora dolor? Aut?</p>
+
+    <h2>Sub título</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi enim saepe culpa ipsa quisquam, dolorum vitae
+        sit nesciunt fuga deleniti quia temporibus nam nobis aut itaque perspiciatis molestiae optio labore?</p>
+
+
+    <h3><!-- Treinando --> Mr. Robot <!-- Fonte Display --></h3>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio aspernatur culpa eum aut reprehenderit
+        accusantium ea? Reiciendis exercitationem nostrum debitis, quas, recusandae molestias, dignissimos suscipit
+        alias error repudiandae aliquid omnis?</p>
+</body>
+
+</html>

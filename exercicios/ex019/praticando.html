@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando hover</title>
+    <style>
+        body {
+            background-color: rgba(173, 216, 230, 0.511);
+        }
+
+        h1 {
+            text-align: center;
+            font: italic 700 2em Arial, sans-serif;
+        }
+
+        div {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        div>p {
+            display: none;
+            width: 200px;
+            margin: auto;
+        }
+
+        .xpraticando {
+            color: red;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .xpraticando:hover>p {
+            display: block;
+            color: purple;
+            text-decoration: underline;
+            background-image: linear-gradient(to right, rgba(56, 80, 88, 0.511), rgba(173, 216, 230, 0.091));
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Praticando o que aprendi na aula</h1>
+
+    <div>Descubra o que este texto esconde simplesmente passando seu cursor sobre o seguinte
+        <div class="xpraticando">X
+            <p>Olá mundo!</p>
+        </div>
+    </div>
+
+    <p>Ir para <a href="hover.html">página hover</a></p>
+</body>
+
+</html>

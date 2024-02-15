@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+</head>
+
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir este site em dispositivos diferentes ou aumente e diminua o tamanho do seu navegador</p>
+
+    <!-- Use a tag <picture> como uma tag semântica para adicionar imagens, dentro dela adicione normalmente imagens com a tag <img> -->
+    <!-- O último item dentro de <picture> deve ser a imagem padrão -->
+    <!-- Use a tag <source:media:type> para especificar o tamanho da tela em que a prómixa imagem aparece-rá, não se esqueça de mudar o "min-width" para "max-width" -->
+    <!-- Para ajustar novos tamanhos ultilize a mesma tag <source:media:type>. SEMPRE A ULTILIZE ACIMA DA ÚLTIMA, como uma escala crescente -->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem grande flexível">
+    </picture>
+
+    <hr>
+
+    <h2>Testando o que aprendi</h2>
+
+    <p>Abaixo temos uma imagem que vai se comportar diferente em determinados tamanhos de tela.</p>
+
+    <picture>
+        <source media="(max-width: 600px)" srcset="imagens-teste/imagemteste-p.png" type="image/png">
+        <source media="(max-width: 800px)" srcset="imagens-teste/imagemteste-m.png" type="image/png">
+        <img src="imagens-teste/imagemteste-g.png" alt="imagem teste grande">
+    </picture>
+
+    <hr>
+
+    <h1>Reproduzindo áudio</h1>
+    <!-- Para adicionar áudio ultilize a tag <audio> e os parâmetros: "controls" para aparecer os controles e "autolplay" para reproduzir o áudio automaticamente -->
+    <!-- O parâmetro loop reproduz novamente o áudio ao chegar no final -->
+    <!-- O parâmetro "preload" tem 3 combinações, o "auto" só considera o site carregado após o carregamento completo do áudio então NÃO o use, o "metadata" carrega o nome do arquivo e algumas informações e o "none" só carrega quando o usuário aperta play -->
+    <!-- Compátivel com os formatos "MP3", "WAV", "OGG" -->
+    <p>Vamos aorender a reproduzir áudio em HTML5.</p>
+    <audio src="midia/youtubemusic- TrackTribe.mp3" controls loop></audio>
+
+    <br>
+
+
+    <!-- Outra maneira seria criar a tag <audio>, remover o parâmetro "src", e criar uma tag <source:src> -->
+    <!-- Ultilizamos esta maneira para assim criar-mos tags <sorce:src> e então usar diferentes tipos de formatos de áudio, caso algum navegador não suporte aquele formato -->
+    <!-- Compátivel com os formatos "MP3", "WAV", "OGG" -->
+    <audio preload="metadata" controls>
+        <source src="midia/youtubemusic- TrackTribe.mp3" type="audio/mpeg">
+        <source src="midia/youtubemusic- TrackTribe.ogg" type="audio/ogg">
+        <source src="midia/youtubemusic- TrackTribe.wav" type="audio/wav">
+        <!-- Tente evitar arquivos "wav", pois são geralmente muito grandes e pesados -->
+        <!-- Caso nenhum áudio seja carregado aparecerá a seguinte mensagem -->
+        <p>Infelizmente seu navegador não suporta os arquivos de áudio. <a
+                href="midia/youtubemusic- TrackTribe.mp3">Clique aqui para baixar o arquivo mp3</a></p>
+    </audio>
+
+</body>
+
+</html>
