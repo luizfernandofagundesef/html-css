@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem de fundo</title>
+    <style>
+        body {
+            background-image: url(imagens/wallpaper001.jpg);
+        }
+
+        .quadrado {
+            background-color: lightcyan;
+            border: 2px solid black;
+            border-radius: 5px;
+            height: 300px;
+            width: 300px;
+            display: inline-block;
+        }
+
+        #q1 {
+            background-color: skyblue;
+        }
+
+        #q2 {
+            background-image: linear-gradient(to left, green, blue);
+        }
+
+        #q3 {
+            /* Esta função nos permite adicionar uma imagem de fundo */
+            background-image: url('imagens/pattern002.png');
+        }
+
+        h1 {
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .teste {
+            border: 3px solid black;
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+        }
+
+        #t1 {
+            background-color: aqua;
+        }
+
+        #t2 {
+            background-image: linear-gradient(to bottom, black, white);
+        }
+
+        #t3 {
+            background-image: url(imagens/pattern003.png);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="quadrado" id="q1"></div>
+    <div class="quadrado" id="q2"></div>
+    <div class="quadrado" id="q3"></div>
+
+    <hr>
+    <h1>praticando</h1>
+
+    <div class="teste" id="t1"></div>
+    <div class="teste" id="t2"></div>
+    <div class="teste" id="t3"></div>
+</body>
+
+</html>
