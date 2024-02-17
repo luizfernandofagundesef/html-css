@@ -10,7 +10,7 @@
     --cor1: #ffffff;
     --cor2: #000000;
     --cor3: #a9a9a9;
-    --cor4: rgba(0, 0, 0, 0.233);
+    --cor4: rgba(0, 0, 0, 0.539);
 
     /* Fontes */
     --fonte1: Verdana, sans-serif;
@@ -78,6 +78,10 @@ section {
     line-height: 2em
 }
 
+section>p {
+    padding-bottom: 2em;
+}
+
 section.normal {
     background-color: var(--cor1);
     color: var(--cor2);
@@ -86,12 +90,25 @@ section.normal {
 section.imagem {
     background-color: var(--cor3);
     color: var(--cor1);
+    box-shadow: inset 6px 6px 13px 0px var(--cor4);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem>p {
     background-color: var(--cor4);
+    text-shadow: 1px 1px 0px black;
     padding: 5px;
     display: inline-block;
+}
+
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
 }
 
 footer {
