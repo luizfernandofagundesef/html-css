@@ -4,22 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundp fixo</title>
     <style>
         body {
             height: 100vh;
+            /* Uma shorthand para o Background
+            color > image > position > repeat > size > attachment
+            */
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+
+            /* O "background-size: cover;" não está funcionando na shorthand até o momento */
+            background-size: cover;
 
             /* Mesmo usando uma imagem de fundo no <body> é bom também usar um "background-color:;" */
-            background-color: #000000;
+            /*background-color: #000000;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: cover;*/
+
+            /* "background-attachment: fixed;" fixou o fundo, deixando apenas o conteúdo móvel */
+            /*background-attachment: fixed;*/
+
         }
 
         main {
             background-color: #ffffff;
-            width: 400px;
+            max-width: 500px;
             padding: 10px;
             margin: auto;
             border: 1px solid black;
@@ -39,6 +50,46 @@
                 modi? Sed sapiente fugiat exercitationem voluptatum impedit quaerat recusandae nemo error minima,
                 corrupti ex sunt adipisci laudantium deleniti iusto earum! Soluta saepe illo aperiam dicta
                 aliquam?</span></p>
+        <p><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium magni ipsam fugit enim totam eum
+                asperiores saepe deleniti. Quibusdam beatae eos et porro hic deserunt ullam consequatur explicabo
+                doloribus illum.</span><span>In impedit quam natus maiores hic atque, libero dolorum sunt beatae unde
+                quia necessitatibus fuga illo magnam obcaecati amet consectetur quibusdam rerum alias maxime labore.
+                Natus doloremque enim aspernatur illum!</span><span>Voluptatem deleniti quo eum fuga iste obcaecati
+                fugit perspiciatis earum? Placeat voluptatibus iusto distinctio ut quidem, fugiat delectus architecto
+                inventore maxime facere nobis! Impedit laudantium praesentium, itaque sequi aperiam
+                eum?</span><span>Aliquam commodi eaque voluptates laborum, aperiam ullam? Ipsa fugiat sint blanditiis
+                soluta eius distinctio nam provident tenetur quia repellat. Et, in! Assumenda officiis facere sequi a.
+                Accusantium dolorem eum illo?</span></p>
+        <p><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium magni ipsam fugit enim totam eum
+                asperiores saepe deleniti. Quibusdam beatae eos et porro hic deserunt ullam consequatur explicabo
+                doloribus illum.</span><span>In impedit quam natus maiores hic atque, libero dolorum sunt beatae unde
+                quia necessitatibus fuga illo magnam obcaecati amet consectetur quibusdam rerum alias maxime labore.
+                Natus doloremque enim aspernatur illum!</span><span>Voluptatem deleniti quo eum fuga iste obcaecati
+                fugit perspiciatis earum? Placeat voluptatibus iusto distinctio ut quidem, fugiat delectus architecto
+                inventore maxime facere nobis! Impedit laudantium praesentium, itaque sequi aperiam
+                eum?</span><span>Aliquam commodi eaque voluptates laborum, aperiam ullam? Ipsa fugiat sint blanditiis
+                soluta eius distinctio nam provident tenetur quia repellat. Et, in! Assumenda officiis facere sequi a.
+                Accusantium dolorem eum illo?</span></p>
+        <p><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium magni ipsam fugit enim totam eum
+                asperiores saepe deleniti. Quibusdam beatae eos et porro hic deserunt ullam consequatur explicabo
+                doloribus illum.</span><span>In impedit quam natus maiores hic atque, libero dolorum sunt beatae unde
+                quia necessitatibus fuga illo magnam obcaecati amet consectetur quibusdam rerum alias maxime labore.
+                Natus doloremque enim aspernatur illum!</span><span>Voluptatem deleniti quo eum fuga iste obcaecati
+                fugit perspiciatis earum? Placeat voluptatibus iusto distinctio ut quidem, fugiat delectus architecto
+                inventore maxime facere nobis! Impedit laudantium praesentium, itaque sequi aperiam
+                eum?</span><span>Aliquam commodi eaque voluptates laborum, aperiam ullam? Ipsa fugiat sint blanditiis
+                soluta eius distinctio nam provident tenetur quia repellat. Et, in! Assumenda officiis facere sequi a.
+                Accusantium dolorem eum illo?</span></p>
+        <p><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium magni ipsam fugit enim totam eum
+                asperiores saepe deleniti. Quibusdam beatae eos et porro hic deserunt ullam consequatur explicabo
+                doloribus illum.</span><span>In impedit quam natus maiores hic atque, libero dolorum sunt beatae unde
+                quia necessitatibus fuga illo magnam obcaecati amet consectetur quibusdam rerum alias maxime labore.
+                Natus doloremque enim aspernatur illum!</span><span>Voluptatem deleniti quo eum fuga iste obcaecati
+                fugit perspiciatis earum? Placeat voluptatibus iusto distinctio ut quidem, fugiat delectus architecto
+                inventore maxime facere nobis! Impedit laudantium praesentium, itaque sequi aperiam
+                eum?</span><span>Aliquam commodi eaque voluptates laborum, aperiam ullam? Ipsa fugiat sint blanditiis
+                soluta eius distinctio nam provident tenetur quia repellat. Et, in! Assumenda officiis facere sequi a.
+                Accusantium dolorem eum illo?</span></p>
     </main>
 </body>
 
