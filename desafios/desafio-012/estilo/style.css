@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #ffffff;
+    --cor2: #000000;
+    --cor3: #a9a9a9;
+    --cor4: rgba(0, 0, 0, 0.233);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    min-height: 100vh;
+    background-color: var(--cor3);
+}
+
+header {
+    background-color: var(--cor2);
+    color: var(--cor1);
+    text-align: center;
+}
+
+header>h1 {
+    padding-top: 50px;
+
+    /* Esta mantém o uppercase e deixa as primeiras letras da palavra um pouco maiores */
+    font-variant: small-caps;
+
+    /* "text-transform: uppercase;" esta nos permite deixar todas as letras em uppercase */
+}
+
+header>p {
+    padding-bottom: 50px;
+}
+
+header a,
+footer a {
+    color: var(--cor1);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover,
+footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 10px;
+
+    /* Espaçamento entre as linhas */
+    line-height: 2em
+}
+
+section.normal {
+    background-color: var(--cor1);
+    color: var(--cor2);
+}
+
+section.imagem {
+    background-color: var(--cor3);
+    color: var(--cor1);
+}
+
+section.imagem>p {
+    background-color: var(--cor4);
+    width: 400px;
+}
+
+footer {
+    background-color: var(--cor2);
+    color: var(--cor1);
+    text-align: center;
+    padding: 10px;
+}
