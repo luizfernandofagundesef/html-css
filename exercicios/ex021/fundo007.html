@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        /* O conteiner terá um posicionamento "relativo" e o conteúdo terá um posicionamento "absoluto" */
+
+
+        #container {
+            background-image: url(imagens/target001.png);
+
+            /* "background-size: 100% 100%;" para a imagem ocupar todo o container */
+            background-size: 100% 100%;
+
+            /* Adicionaremos aqui um "position: relative;" */
+            position: relative;
+            height: 500px;
+            background-color: teal;
+            padding: 10px;
+        }
+
+        /* "margin: auto;" apenas alinha horizontalmente */
+        .conteudo {
+
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            /* Adicionaremos aqui um "position: absolute;" */
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: violet;
+
+            /* Ao adicionar um "position: absolute;" em um elemnto, o mesmo nos permite adicionar propriedades importantes que são: "left:;" e "top:;" */
+            left: 50%;
+            top: 50%;
+
+            /* A propriedade "transform:;" permite alterar a transformação de qualquer caixa */
+            transform: translate(-50%, -50%);
+
+            /* Usando VALORES NEGATIVOS levando em conta que o "conteúdo" está com a ponta suoerior esquerda ALINHADA ao MEIO do "container" */
+        }
+
+        h2 {
+            text-align: center;
+            text-decoration: underline;
+            font: italic bold 2em Arial;
+        }
+
+        #p1 {
+            border: 2px solid black;
+            background-color: cadetblue;
+            height: 200px;
+            padding: 5px;
+
+            /* Adicionando a propriedade que vai me permitir centralizar a caixa */
+            position: relative;
+        }
+
+        .p2 {
+            border: 2px solid black;
+            background-color: tomato;
+            height: 100px;
+            width: 100px;
+
+            /* Adicionando a propriedade que vai me permitir centralizar a caixa */
+            position: absolute;
+
+            /* Adicionando propriedades para a centralzação, apenas disponíveis ao declarar este conteúdo com "position: absolute;" */
+            left: 50%;
+            top: 50%;
+
+            /* Adicionando aqui a última propriedade para poder centralizar a caixa */
+            transform: translate(-50%, -50%);
+        }
+
+        div>aside>p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Para alinhar uma cixa verticalmente precisamos ter um "container" e um "conteúdo" -->
+    <section id="container">
+        <article class="conteudo">
+
+        </article>
+    </section>
+
+    <h2>Praticando aqui</h2>
+    <div id="p1">
+        <aside class="p2">
+            <p>Hello World!</p>
+
+        </aside>
+    </div>
+</body>
+
+</html>
