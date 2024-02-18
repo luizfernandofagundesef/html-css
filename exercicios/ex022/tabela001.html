@@ -12,21 +12,36 @@
 
         table {
             width: 400px;
+            height: 400px;
             /* "border-collapse: collapse;" juntou as bordas da tabela */
             border-collapse: collapse;
-        }
-
-        tr.linha {
-            background-color: slategray;
         }
 
         td {
             padding: 8px;
             border: 1px solid black;
+            /* Alinhamento horizontal do conteúdo da tabela, sendo: "left", "center" e "right" */
+            text-align: center;
+
+            /* use "vertical-align: sup;"alinhamento vertical do conteúdo da tabela, sendo: "top", "bottom" e "middle" */
+            vertical-align: top;
         }
 
-        td.dado {
-            background-color: chartreuse;
+        .numero {
+            /* Alinhei o conteúdo da <td> em cima na direita */
+            vertical-align: top;
+            text-align: right;
+        }
+
+        #table1 {
+            width: 400px;
+            height: 200px;
+        }
+
+        .t1,
+        .t2,
+        .t3 {
+            vertical-align: middle;
         }
     </style>
 </head>
@@ -39,7 +54,7 @@
     Table = tabela
     Table row = linha de tabela
     Table header = cabeçalho da tabela
-    Tbale data = dado de tabela
+    Table data = dado de tabela
     -->
     <table>
 
@@ -48,14 +63,14 @@
             <td>B1</td>
             <td>C1</td>
         </tr>
-        <tr class="linha"> <!-- Segunda linha -->
+        <tr> <!-- Segunda linha -->
             <td>A2</td>
             <td>B2</td>
             <td>C2</td>
         </tr>
         <tr> <!-- Terceira linha -->
-            <td>A3</td>
-            <td class="dado">B3</td>
+            <td class="numero">A3</td>
+            <td>B3</td>
             <td>C3</td>
         </tr>
         <tr> <!-- Quarta linha -->
@@ -67,12 +82,12 @@
         </tr>
     </table>
 
-    <h2>Treinando Tabela</h2>
-    <table>
+    <h2>Treinando posicionamento de conteúdo na Tabela</h2>
+    <table id="table1">
         <tr>
-            <td>Dado 1</td>
-            <td>Dado 2</td>
-            <td>Dado 3</td>
+            <td class="t1">Dado 1</td>
+            <td class="t2">Dado 2</td>
+            <td class="t3">Dado 3</td>
         </tr>
         <tr>
             <td>Nome</td>
