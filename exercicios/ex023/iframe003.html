@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframes</title>
+    <style>
+        body {
+            font: normal 1em Arial, Helvetica, sans-serif;
+        }
+
+        #tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Escolha</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id atque, itaque vero, ea illum corrupti ut eius
+        perferendis cupiditate quia nostrum quas voluptatum, molestias rem ducimus veniam voluptatem repudiandae
+        sapiente.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pagina001.html" target="frame1">primeira página</a></li>
+        <li><a href="paginas-extras/pagina002.html" target="frame1">segunda página</a></li>
+        <li><a href="paginas-extras/pagina003.html" target="frame1">treceira página</a></li>
+    </ul>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ab dicta nemo exercitationem incidunt nobis
+        aliquid sunt molestiae velit? Sit aut ut pariatur, quasi temporibus dolorum in ducimus harum quaerat! Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Harum similique impedit iure quam minima rerum, nobis vitae
+        eum ipsam molestiae atque suscipit a itaque voluptate reprehenderit consequuntur esse corrupti fuga.</p>
+
+    <!-- O parâmetro "name:;" me permite nomear o iframe e então add este nome na URL do link da página a ser aberta -->
+
+    <!-- O parâmetro "srcdoc:;" nos permite adicionar um conteúdo para aparecer no Iframe logo ao carregar a página, como se fosse um cover -->
+
+    <iframe id="tela" name="frame1"
+        srcdoc="<h1> Clique em um dos links acima para visualiza-los</h1><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt fugit pariatur corporis sequi ullam maxime ad architecto error id, esse sint facere illo ipsam expedita alias et iusto tenetur dolores?</p><img src='imagens/foto-p.png' alt='imagem de exemplo'>">
+        <p>Seu navegador não suporta este recurso</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, eius deleniti eaque aut fugit voluptatem
+        blanditiis alias deserunt est. Consequatur architecto sequi laborum voluptas ad quae aliquid, at libero sint?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed voluptate voluptas architecto dolores. Quibusdam
+        esse deserunt ea, mollitia a ullam inventore corrupti ab, vel sit minima nam nobis cupiditate aliquid!</p>
+</body>
+
+</html>
