@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, repudiandae harum eligendi praesentium ea
+        enim delectus quos sint quia, amet quae, consectetur est eos fuga nostrum quisquam nobis. Itaque, architecto?
+    </p>
+
+    <!-- O parãmetro "sandbo: sandbox;" bloqueia todo acesso que outros sites tentem fazer de dentro do Iframe -->
+    <!-- Para deixar o site que estiver dentro do Iframe com um acesso limitado ao meu site devo usar o parâmetro (refrerrerpolicy= "no-referer") -->
+    <iframe src="paginas-extras/pagina004.html" sandbox="allow-same-origin allow-forms allow-scripts"
+        referrerpolicy="no-referrer">
+        Seu navegador não é compátivel com esta função
+        <!-- O parâmetro (sandbox: "sandbox";) dexa o Iframe com segurança no máximo, entretanto podemos desligar algumas coisas, por exemplo "allow-same-origin", "allow-forms", "allow-scripts" -->
+    </iframe>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis quia, sapiente mollitia expedita consequatur
+        animi ducimus aperiam autem dicta beatae dolorum quos recusandae sit doloribus enim ipsam temporibus ullam
+        obcaecati?</p>
+</body>
+
+</html>
