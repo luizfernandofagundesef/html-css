@@ -18,9 +18,11 @@
     <!-- Todo formulário deve estar entre <form> e </form> -->
     <!-- o parâmetro (autocomplete="off") desliga o preenchimento automático -->
     <!-- este "cadastro.php" é um sript que vou criar para poder cadastrar os dados -->
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" autocomplete="off" method="post">
 
         <!-- Para criar relação entre a palavra "nome" e o campo "input text" use "label" e dentro dele adicione o "id" -->
+        <!-- Use o parâmetro "method: POST;"para esconder os dados do campo input da URL, muito ultilizado para infromações sensíveis como senhas e outras informações confidenciais, caso os dados ultrapassem 3000 bites tambpem usamos o POST -->
+        <!-- Use o mesmo parâmetro com "GET" caso as informções nçao sejam sensíveis, por exemplo, nome, sobrenome, peso, altura. -->
         <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="isobrenome" id="isobrenome"></p>
         <p><input type="submit" value="Enviar"></p>

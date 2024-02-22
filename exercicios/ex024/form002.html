@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadstro.php" method="post" autocomplete="off">
+        <p>
+            <label for="iusu">Usuário:</label>
+            <!-- O atributo "required" é uasdo para dizer ao visitante que add seu User e Senha é obrigatório -->
+            <!-- Use os atributos "min: length;" "max: length;" para determinar a quantidade de letras mínimas e máximas pode ter -->
+            <!-- O "size" determina quantas letras serão mostradas -->
+            <!-- Use "placeholder" para escrever o que vai deve ser escrito dentro daquele campo -->
+            <input type="text" name="Usu" id="iusu" required minlength="5" maxlength="15" size="8" placeholder="usuário"
+                autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <!-- O input dp tipo passqord é usado para senhas -->
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="16" size="8"
+                placeholder="senha" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <!-- O input do tipe reset cria um botão com a funcionalidade de limpara a área do form -->
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+
+</html>
