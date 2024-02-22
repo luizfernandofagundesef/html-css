@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get">
+
+        <p>
+            <label for="icor">Cor:</label>
+            <!-- Para criar um input de cor, para add uma cor por padrão add o (value="#") e uma cor hexadecimal -->
+            <input type="color" name="cor" id="icor" value="#ff0000">
+        </p>
+
+        <p>
+            <label for="inivel">Nível de satisfação</label>
+            <!-- Para deixar um valão padrão de início add um (value="") poe exemplo, (value="1") -->
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="1">
+        </p>
+
+        <p>
+            <label for="ifoto">Foto do perfil</label>
+            <!-- use input file para add um file como: imagens. Ao usar este controle de envio de arquivo, o method do "form" não pode ser "get" pois o arquivo ultrapassa os 3000 bites -->
+            <input type="file" name="foto" id="ifoto">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+
+</html>
