@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formilário</title>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastro.php" method="get">
+
+        <p>
+            <label for="iano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2024" oninput="calcidade()">
+            <!-- oninput = quando eu digitar algo na caixa, chamarei uma função chamada "calcidade()" -->
+        </p>
+
+        <p>
+            <label for="iidade">Sua idade é:</label>
+            <output id="iidade">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <!-- JavaScript -->
+
+    <script>
+        function calcidade() {
+            /* dentro desta function criei uma variável chamada atual, que é pra ser o ano atual */
+            let atual = new Date().getFullYear()
+            /* aqui peguei o output que é o iidade será igual ao Número do ano atual - (MENOS) o qno em que a pessoa nasceu que no caso é o número que adicionar-mos ao "iano" */
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+
+</html>

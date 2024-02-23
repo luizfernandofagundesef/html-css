@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <form action="cadatsro.php" method="get">
+
+        <p>
+            <label for="in1">Numero 1:</label>
+            <!-- A linha abaixo de "oniput" é JavaScript -->
+            <!-- Esta linha está tanto em in1 quanto em in2 para que ambos somem quando alterados -->
+            <input type="number" name="n1" id="in1" min="0" max="50" required
+                oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="in1">Numero 2:</label>
+            <input type="number" name="n2" id="in2" min="0" max="50" required
+                oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            <!-- Para melhor compreensão do código JavaScript acima posso o ler como: o "isoma" é o ID que adicionei no <output> que é o número "0"(zero), innerHTML siginifica o HTML que estiver dentro de output será o Number(in1.value) + Number(in2.value), ou seja, o valor que esta dentro de in1 + o valor que esta dentro de in2, gerando um resultado da soma entre os dois valores -->
+        </p>
+
+        <p>
+            <label for="isoma">Soma</label>
+            <output name="soma" id="isoma">o</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+
+</html>
