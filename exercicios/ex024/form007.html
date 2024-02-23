@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <h1>Formuláirio</h1>
+
+    <form action="cadastro.php" method="get">
+
+        <p>
+            <label for="iest">Estado:</label>
+            <!-- Use a tag <select> para criar um campo de escolha -->
+            <!-- E a tag <option> para os valores que aparecerão para serem selecionados -->
+            <select name="estado" id="iest">
+                <option value="" selected>-- Escolha --</option>
+                <!-- Ao envelopar o <option> consigo colocar um "label" no exemplo abaixo transfromei 3 options em um grupo -->
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <!-- Adicionando <selected> dixo o mesmo como exibição padrão no campo de escolha -->
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="BH">Bahia</option>
+                    <option value="SG">Sergipe</option>
+                    <option value="AL">Alagoas</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="Profissão" id="iprof" list="lstprof"> <!-- List com o "id" do "datalist" -->
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Contabilista</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem:</label> <br>
+            <!-- "<textarea>" para criar um campo de texto com algumas configs a serem modificadas abaixo -->
+            <!-- Ao usar o textarea é recomendável coloca o "method=POST" ao invés do "GET" pois o "GET" tem um limite de 3000 bites -->
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite sua mensagem aqui:"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+
+</html>
